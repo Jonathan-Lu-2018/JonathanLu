@@ -1,0 +1,15 @@
+html { 
+    background: url(../images/background.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.prof-box{
+    height: 400px;
+    width: 400px;
+    background-color: grey;
+    padding: 40px;
+    color: white;
+}
