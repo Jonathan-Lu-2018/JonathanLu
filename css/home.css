@@ -86,6 +86,7 @@ header .navbar ul li a.active::before{
 	left:0;
 }
 
+/* Home Page */
 .home{
 	min-height: 100vh;
 	background-image: url("../images/background.jpg");
@@ -141,8 +142,6 @@ header .navbar ul li a.active::before{
 	margin: 0 0 10px;
 	padding: 0;
 }
-
-
 
 
 
