@@ -1,0 +1,372 @@
+/** All my CSS for resume website **/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body{
+	margin:0;
+	font-family: 'Poppins', sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+}
+
+.container{
+	max-width: 1140px;
+	margin: auto;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+header{
+	position: absolute;
+	left:0px;
+	right:0px;
+	border-bottom: 1px solid #423940;
+	padding: 0px 15px;
+	z-index: 10;
+}
+
+header .row{
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .brand-name a{
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+	position: relative;
+}
+
+header .navbar ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+header .navbar ul li{
+	display: inline-block;
+	margin-left: 35px;
+}
+
+header .navbar ul li a{
+	font-size: 15px;
+	text-decoration: none;
+	line-height: 72px;
+	color: white;
+	display: block;
+	font-weight: 600;
+	position: relative;
+}
+
+header .navbar ul li a::before{
+	content: '';
+	height: 3px;
+	background-color: white;
+	width: 0%;
+	position: absolute;
+	right: 0px;
+	bottom: -1px;
+	transition: all .5s ease;
+}
+
+header .navbar ul li a:hover::before{
+	width:100%;
+	left: 0;
+}
+
+header .navbar ul li a.active::before{
+	width:100%;
+	left:0;
+}
+
+/* Home Page */
+.home{
+	min-height: 100vh;
+	background-image: url("../images/background.jpg");
+	background-size:cover;
+	background-position: center;
+	padding: 15px;
+}
+
+.home .full-screen{
+	min-height: 100vh;
+
+}
+
+.home .home-content{
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.home .home-content .block{
+	flex: 0 0 75%;
+	max-width: 75%;
+	padding-left: 35px;
+	border-left: 5px solid #ffffff;
+	margin-top: -140px;
+
+}
+
+.home .home-content .block h6{
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+}
+
+.home .home-content .block h1{
+	color: white;
+	font-size: 70px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+	line-height: 1.2;
+}
+
+.home .home-content .block h3{
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.about-me{
+	padding:100px 15px;
+}
+
+.about-me .section-title{
+	flex: 0 0 100;
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+
+.about-me .section-title h1{
+	display: inline-block;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+	margin:0 0 5px;
+	position: relative;
+}
+
+.about-me .section-title h1:before{
+	content: '';
+	left:0;
+	position: absolute;
+	height:2px;
+	right:30%;
+	background-color: #febd01;
+	bottom: 0px;
+}
+
+.text-uppercase{
+	text-transform: uppercase!important;
+}
+
+.about-me .section-title p.small{
+	display: block;
+	font-size: 14px;
+	color: #838383;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.about-me .about-content .img{
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+}
+
+.about-me .about-content .img img{
+	width: 100%;
+	display: block;
+	/*-webkit-transform: rotateY(180deg);*/
+	/*transform: rotateY(180deg);*/
+}
+
+.about-me .about-content .text{
+	flex: 0 0 66.66%;
+	max-width: 66.66%;
+	padding-left:50px;
+}
+
+.about-me .about-content .text h4{
+	font-size: 25px;
+	font-weight: 600;
+	margin: 0 0 5px;
+	color: #000000;
+}
+
+.about-me .about-content .text h6{
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 0 15px;
+	color: #000000;
+}
+
+.about-me .about-content .text h6 span{
+	color: #febd01;
+}
+
+.about-me .about-content .text p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color:#838383;
+	margin: 0 0 20px;
+}
+
+.about-me .about-content .text .info{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 10px;
+
+}
+
+.about-me .about-content .text .info .list{
+	flex: 0 0 calc(50% - 15px);
+	max-width: calc(50% - 15px);
+	margin-top:10px;
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #dee2e6;
+	padding-bottom: 10px;
+	color: #838383;
+}
+
+.about-me .about-content .text .info .list label{
+	padding-right: 10px;
+	color: #000000;
+	font-weight: 600;
+	font-size: 15px;
+}
+
+.about-me .about-content .text .info .list p{
+	margin: 0;
+}
+
+.about-me .about-content .text .social-link{
+	padding-top: 30px;
+}
+
+.about-me .about-content .text .social-link a{
+	height: 30px;
+	width: 30px;
+	background-color: #000000;
+	border-radius: 3px;
+	display: inline-block;
+	border:1px solid #000000;
+	line-height: 28px;
+	text-align: center;
+	margin:0 1px;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.about-me .about-content .text .social-link a:hover{
+	background-color: transparent;
+}
+
+.about-me .about-content .text .social-link a .fa{
+	color: #ffffff;
+	font-size:12px;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.about-me .about-content .text .social-link a:hover .fa{
+	color:#000000;
+}
+
+/* Skills */
+.skills{
+	padding: 100px 15px;
+	background-color: #f5f8fd;
+}
+
+.skills .skills-content{
+	flex: 0 0 50%;
+	max-width: 50%;
+	padding-right:30px;
+}
+
+.skills .img{
+	background-color: blue;
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.skills .img img{
+	width: 100%;
+	display: block;
+}
+
+.skills .skills-content .section-title p{
+	font-size: 15px;
+	font-weight: 400;
+	line-height:24px;
+	color:#838383;
+	margin:15px 0 0px;
+}
+
+.skills .skills-content .skill-box{
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+
+.skills .skills-content. .skill-box h6{
+	font-size: 16px;
+	font-weight: 500;
+	color:#000000;
+	margin:0 0 8px;
+}
+
+.skills .skills-content .skill-box .skill-bar{
+	height:5px;
+	background-color: #eeeeee;
+	position:relative;
+}
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in{
+	background-color: #febd01;
+	position: absolute;
+	left:0;
+	top:0;
+	height:100%;
+}
+
+.skills .skills-content .skill-box .skill-bar .skill-bar-in span{
+	color:#838383;
+	font-size:16px;
+	font-weight:400;
+	position: absolute;
+	right: 0;
+	top: -30px;
+}
+
+
+
+
+
+

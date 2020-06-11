@@ -58,7 +58,7 @@
 .about-me .about-content .text{
 	flex: 0 0 66.66%;
 	max-width: 66.66%;
-	padding-left: 30px;
+	padding-left:50px;
 }
 
 .about-me .about-content .text h4{
@@ -119,7 +119,6 @@
 
 .about-me .about-content .text .social-link{
 	padding-top: 30px;
-
 }
 
 .about-me .about-content .text .social-link a{
