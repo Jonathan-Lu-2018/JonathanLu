@@ -3,7 +3,37 @@
 
 .skills{
 	padding: 100px 15px;
-	background-color: #f5f8fd;
+	background-color:#f5f8fd;
+}
+
+.skills .section-title{
+	flex: 0 0 100;
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+
+.skills .section-title h1{
+	display: inline-block;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+	margin:0 0 5px;
+	position: relative;
+}
+
+.skills .section-title h1:before{
+	content: '';
+	left:0;
+	position: absolute;
+	height:2px;
+	right:30%;
+	background-color: #febd01;
+	bottom: 0px;
+}
+
+.text-uppercase{
+	text-transform: uppercase!important;
 }
 
 .skills .skills-content{
@@ -13,10 +43,10 @@
 }
 
 .skills .img{
-	background-color: blue;
 	flex: 0 0 50%;
 	max-width: 50%;
 }
+
 
 .align-items-center{
 	align-items: center;
@@ -41,7 +71,7 @@
 	margin-bottom: 30px;
 }
 
-.skills .skills-content. .skill-box h6{
+.skills .skills-content .skill-box h6{
 	font-size: 16px;
 	font-weight: 500;
 	color:#000000;
