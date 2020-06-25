@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	margin:0;
 	font-family: 'Poppins', sans-serif;
@@ -21,6 +25,44 @@ body{
 	flex-wrap: wrap;
 }
 
+.section-title{
+	flex: 0 0 100;
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+
+.section-title h1{
+	display: inline-block;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+	margin:0 0 5px;
+	position: relative;
+}
+
+.section-title h1:before{
+	content: '';
+	left:0;
+	position: absolute;
+	height:2px;
+	right:30%;
+	background-color: #febd01;
+	bottom: 0px;
+}
+
+.text-center{
+	text-align: center!important;
+}
+
+.text-left{
+	text-align: left!important;
+}
+
+.text-right{
+	text-align: right!important;
+}
+
 header{
 	position: absolute;
 	left:0px;
@@ -28,6 +70,22 @@ header{
 	border-bottom: 1px solid #423940;
 	padding: 0px 15px;
 	z-index: 10;
+}
+
+header.fixed{
+	background-color: #ffffff;
+	position: fixed;
+	border-color: #eeeeee;
+	animation: fixHeader .5s ease;
+}
+
+@keyframes fixHeader{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
 }
 
 header .row{
@@ -42,6 +100,10 @@ header .brand-name a{
 	color: white;
 	text-transform: uppercase;
 	position: relative;
+}
+
+header.fixed .brand-name a{
+	color:#000000;
 }
 
 header .navbar ul{
@@ -65,6 +127,10 @@ header .navbar ul li a{
 	position: relative;
 }
 
+header.fixed .navbar ul li a{
+	color: #000000;
+}
+
 header .navbar ul li a::before{
 	content: '';
 	height: 3px;
@@ -74,6 +140,10 @@ header .navbar ul li a::before{
 	right: 0px;
 	bottom: -1px;
 	transition: all .5s ease;
+}
+
+header.fixed .navbar ul li a::before{
+	background-color: #febd01;
 }
 
 header .navbar ul li a:hover::before{
