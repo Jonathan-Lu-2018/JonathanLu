@@ -73,9 +73,9 @@ header{
 }
 
 header.fixed{
-	background-color: #ffffff;
+	background-color: #f5f8fd;
 	position: fixed;
-	border-color: #eeeeee;
+	border-color: #cccccc;
 	animation: fixHeader .5s ease;
 }
 
@@ -97,7 +97,7 @@ header .brand-name a{
 	text-decoration: none;
 	font-size: 22px;
 	font-weight: 600;
-	color: white;
+	color: #ffffff;
 	text-transform: uppercase;
 	position: relative;
 }
@@ -121,7 +121,7 @@ header .navbar ul li a{
 	font-size: 15px;
 	text-decoration: none;
 	line-height: 72px;
-	color: white;
+	color: #ffffff;
 	display: block;
 	font-weight: 600;
 	position: relative;
@@ -134,7 +134,7 @@ header.fixed .navbar ul li a{
 header .navbar ul li a::before{
 	content: '';
 	height: 3px;
-	background-color: white;
+	background-color: #ffffff;
 	width: 0%;
 	position: absolute;
 	right: 0px;
@@ -188,7 +188,7 @@ header .navbar ul li a.active::before{
 }
 
 .home .home-content .block h6{
-	color: white;
+	color: #ffffff;
 	font-size: 18px;
 	font-weight: 500;
 	margin: 0;
@@ -197,7 +197,7 @@ header .navbar ul li a.active::before{
 }
 
 .home .home-content .block h1{
-	color: white;
+	color: #ffffff;
 	font-size: 70px;
 	font-weight: 600;
 	margin: 0;
@@ -206,7 +206,7 @@ header .navbar ul li a.active::before{
 }
 
 .home .home-content .block h3{
-	color: white;
+	color: #ffffff;
 	font-size: 25px;
 	font-weight: 500;
 	margin: 0 0 10px;
